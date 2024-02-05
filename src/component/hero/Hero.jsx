@@ -1,13 +1,18 @@
 import "./hero.scss";
+import { motion } from "framer-motion";
 
-textVariants = {
+const textVariants = {
   initial: {
     x: -500,
     opacity: 0,
   },
   animate: {
     x: 0,
-    opacity: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildrem: 0.1,
+    },
   },
 };
 
@@ -15,15 +20,24 @@ const Hero = () => {
   return (
     <div className="hero">
       <div className="wrapper">
-        <div className="textContainer">
-          <h2>HARVEY TYLER</h2>
-          <h1>Web developer and UI designer</h1>
-          <div className="buttons">
-            <button>See the Latest Works</button>
-            <button>Contact Me</button>
-          </div>
-          <img src="/scroll.png" alt="" />
-        </div>
+        <motion.div
+          className="textContainer"
+          variants={textVariants}
+          initial="initial"
+          animate="animate"
+        >
+          <motion.h2 variants={textVariants}>HARVEY TYLER</motion.h2>
+          <motion.h1 variants={textVariants}>
+            Web developer and UI designer
+          </motion.h1>
+          <motion.div className="buttons" variants={textVariants}>
+            <motion.button variants={textVariants}>
+              See the Latest Works
+            </motion.button>
+            <motion.button variants={textVariants}>Contact Me</motion.button>
+          </motion.div>
+          <motion.img variants={textVariants} src="/scroll.png" alt="" />
+        </motion.div>
       </div>
       <div className="slidingTextCOntainer">
         Writer Content Creator Influencer
