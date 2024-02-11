@@ -5,6 +5,7 @@ import Navbar from "./component/navbar/Navbar";
 import Parallax from "./component/parallax/Parallax";
 import Portfolio from "./component/portfolio/Portfolio";
 import Services from "./component/services/Services";
+
 const App = () => {
   return (
     <div>
@@ -23,10 +24,10 @@ const App = () => {
       </section>
       <Portfolio />
       <section id="Contact">
-        <Contact/>
+        <Contact />
       </section>
-      {/* <Test />
-      <Test /> */}
+      {/* <Test/>
+    <Test/> */}
     </div>
   );
 };
