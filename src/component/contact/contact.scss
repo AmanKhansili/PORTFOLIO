@@ -44,18 +44,23 @@
   .formContainer {
     flex: 1;
     position: relative;
-    
+
     @include mobile {
       padding: 50px;
       width: 100%;
     }
-
 
     .phoneSvg {
       stroke: orange;
       position: absolute;
       margin: auto;
       z-index: -1;
+
+      // @include mobile {
+      //   bottom: 50px;
+      //   right: 0px;
+      //   left: 0px;
+      // }
     }
 
     form {
