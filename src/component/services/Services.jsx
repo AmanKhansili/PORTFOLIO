@@ -77,11 +77,7 @@ const Services = () => {
           <ol type="i">
             <li>
               <p>
-                <img src="/github.png" alt="" />: Lorem ipsum, dolor sit amet
-                consectetur adipisicing elit. Accusamus a architecto voluptatum
-                inventore quam quas, aut repellendus quidem cumque, sapiente
-                adipisci illum excepturi nemo magni beatae id explicabo alias!
-                Inventore.
+                <img src="/github.png" alt="" />: 
               </p>
             </li>
             <li>
