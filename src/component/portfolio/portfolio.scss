@@ -39,6 +39,7 @@
       align-items: center;
       justify-content: center;
       gap: 50px;
+      z-index: 999;
 
       @include mobile {
         flex-direction: column;

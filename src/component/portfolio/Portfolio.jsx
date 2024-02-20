@@ -14,14 +14,14 @@ const items = [
     id: 2,
     title: "Travelling",
     img: "2.jpg",
-    link: "https://amankhansili.github.io/Web_Sites/#",
+    link: "https://amankhansili.github.io/Web_Sites/",
     desc: "Discover your next adventure with our intuitive travel website.",
   },
   {
     id: 3,
     title: "Portfolio",
     img: "3.jpg",
-    link: "https://akportfol-io.netlify.app/",
+    link: "https://portfolioamankhansili.netlify.app/",
     desc: "An elegantly designed portfolio website showcasing a diverse range of creative works, seamlessly blending artistic flair with user-friendly navigation.",
   },
 ];
