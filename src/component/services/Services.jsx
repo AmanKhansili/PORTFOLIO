@@ -22,8 +22,6 @@ const variants = {
 const Services = () => {
   const ref = useRef();
 
-  const isInView = useInView(ref, { margin: "-100px" });
-
   return (
     <motion.div
       className="services"
@@ -45,14 +43,15 @@ const Services = () => {
         <div className="title">
           <img src="/people.webp" alt="" />
           <h1>
-            <motion.b whileHover={{color:"orange"}}>Unique</motion.b> Ideas
+            <motion.b whileHover={{ color: "orange" }}>Unique</motion.b> Ideas
           </h1>
         </div>
         <div className="title">
           <h1>
-            <motion.b whileHover={{color:"orange"}}>For Your</motion.b> Business.
+            <motion.b whileHover={{ color: "orange" }}>For Your</motion.b>{" "}
+            Business.
           </h1>
-          <button>WHAT WE DO?</button>
+          <button>WHAT I DO?</button>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
@@ -60,26 +59,41 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>INTRODUCTION</h2>
+          <p>"Hello,</p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            I'm Aman Khansili, a recent graduate with a degree in B.Tech. Though
+            I'm a newcomer, my studies have equipped me with a solid foundation
+            in Front-end. Eager to contribute my skills and continue learning in
+            the ever-evolving world of web development."
           </p>
-          <button>Go</button>
+          <button>RESUME</button>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
-          </p>
+          <h2>SKILLS</h2>
+          <ol type="i">
+            <li>
+              <p>
+                <img src="/github.png" alt="" />: Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Accusamus a architecto voluptatum
+                inventore quam quas, aut repellendus quidem cumque, sapiente
+                adipisci illum excepturi nemo magni beatae id explicabo alias!
+                Inventore.
+              </p>
+            </li>
+            <li>
+              <img src="/linkedin.png" alt="" />
+            </li>
+            <li>
+              <img src="/instagram.png" alt="" />
+            </li>
+            <li>
+              <img src="/facebook.png" alt="" />
+            </li>
+          </ol>
           <button>Go</button>
         </motion.div>
       </motion.div>

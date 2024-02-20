@@ -121,9 +121,18 @@
       }
 
       p {
+        font-family: system-ui;
+
         @include mobile {
           display: none;
         }
+      }
+
+      img {
+        width: 18px;
+        height: 18px;
+        position: relative;
+        top: 5px;
       }
 
       button {
