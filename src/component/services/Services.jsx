@@ -77,25 +77,38 @@ const Services = () => {
           <ol>
             <li>
               <p>
-                <img src="/html.png" alt="" /> HTML : Creates the structure of
-                websites using HTML for a strong foundation.
+                <img src="/html.png" alt="HTML" />{" "}
+                <span style={{ fontWeight: "bold", color: "#ff4c1e" }}>
+                  HTML
+                </span>{" "}
+                : Creates the structure of websites using HTML for a strong
+                foundation.
               </p>
             </li>
             <li>
-              <img src="/css.png" alt="" /> CSS: Designs visually appealing and
-              responsive web pages with CSS.
+              <img src="/css.png" alt="CSS" />{" "}
+              <span style={{ fontWeight: "bold", color: "skyblue" }}>CSS</span>{" "}
+              : Designs visually appealing and responsive web pages with CSS.
             </li>
             <li>
-              <img src="/js.png" alt="" /> JavaScript: Uses JS to add dynamic
-              and interactive features to websites.
+              <img src="/js.png" alt="JavaScript" />{" "}
+              <span style={{ fontWeight: "bold", color: "yellow" }}>
+                JavaScript
+              </span>{" "}
+              : Uses JS to add dynamic and interactive features to websites.
             </li>
             <li>
-              <img src="/react.png" alt="" /> ReactJs: Builds modern and
-              user-friendly interfaces with React.
+              <img src="/react.png" alt="ReactJs" />{" "}
+              <span style={{ fontWeight: "bold", color: "#00d2d7" }}>
+                ReactJs
+              </span>{" "}
+              : Builds modern and user-friendly interfaces with React.
             </li>
             <li>
-              <img src="/git.png" alt="" /> Git: Manages and tracks code changes
-              efficiently with Git for collaborative development.
+              <img src="/git.png" alt="Git" />{" "}
+              <span style={{ fontWeight: "bold", color: "#cc4342" }}>Git</span>{" "}
+              : Manages and tracks code changes efficiently with Git for
+              collaborative development.
             </li>
           </ol>
           <button>Go</button>
