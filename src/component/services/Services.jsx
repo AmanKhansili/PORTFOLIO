@@ -74,20 +74,23 @@ const Services = () => {
           whileHover={{ background: "lightgray", color: "black" }}
         >
           <h2>SKILLS</h2>
-          <ol type="i">
+          <ol>
             <li>
               <p>
-                <img src="/github.png" alt="" />: 
+                <img src="/github.png" alt="" /> HTML : Creates the structure of websites using HTML for a strong foundation.
               </p>
             </li>
             <li>
-              <img src="/linkedin.png" alt="" />
+              <img src="/linkedin.png" alt="" /> CSS: Designs visually appealing and responsive web pages with CSS.
             </li>
             <li>
-              <img src="/instagram.png" alt="" />
+              <img src="/instagram.png" alt="" /> JavaScript: Uses JS to add dynamic and interactive features to websites.
             </li>
             <li>
-              <img src="/facebook.png" alt="" />
+              <img src="/facebook.png" alt="" /> ReactJs: Builds modern and user-friendly interfaces with React.
+            </li>
+            <li>
+              <img src="/facebook.png" alt="" /> Git: Manages and tracks code changes efficiently with Git for collaborative development.
             </li>
           </ol>
           <button>Go</button>
