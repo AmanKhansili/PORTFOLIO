@@ -124,14 +124,14 @@
       li {
         list-style: none;
         margin-bottom: 10px;
+
+        @include mobile {
+          margin-bottom: 0px;
+        }
       }
 
       p {
         font-family: system-ui;
-
-        @include mobile {
-          display: none;
-        }
       }
 
       img {

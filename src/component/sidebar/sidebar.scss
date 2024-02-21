@@ -54,4 +54,7 @@
     border: none;
     cursor: pointer;
   }
+  svg {
+    z-index: 999;
+  }
 }
