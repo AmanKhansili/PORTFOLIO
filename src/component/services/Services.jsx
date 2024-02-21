@@ -67,7 +67,11 @@ const Services = () => {
             in Front-end. Eager to contribute my skills and continue learning in
             the ever-evolving world of web development."
           </p>
-          <button>RESUME</button>
+          <button>
+            <a href="https://drive.google.com/file/d/1Lyzy4iCtW_dZ9BiVllMZO0fIIVA5t4Ac/view?usp=sharing">
+              RESUME
+            </a>
+          </button>
         </motion.div>
         <motion.div
           className="box"
@@ -111,7 +115,9 @@ const Services = () => {
               collaborative development.
             </li>
           </ol>
-          <button>Go</button>
+          <button>
+            <a href="https://github.com/AmanKhansili">GitHub</a>
+          </button>
         </motion.div>
       </motion.div>
     </motion.div>
