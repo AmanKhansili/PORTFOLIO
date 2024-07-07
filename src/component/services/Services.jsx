@@ -68,7 +68,7 @@ const Services = () => {
             the ever-evolving world of web development."
           </p>
           <button>
-            <a href="https://drive.google.com/file/d/1TfrTmsqZzRVNeI_y6Ij9uHhSKts09BMY/view?usp=drive_link">
+            <a href="https://drive.google.com/file/d/17H30RXddvdZ9gtebONOmB1iqoYEsu4m6/view?usp=drive_link">
               RESUME
             </a>
           </button>
