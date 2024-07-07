@@ -5,14 +5,21 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "E-Library",
+    title: "EduJunction",
+    img: "course1.png",
+    desc: "Edujunction LMS is a comprehensive learning management system designed to streamline and enhance the educational experience. It caters to both educators and learners, providing a centralized platform for course delivery, content management, communication, and assessment.",
+    link: "https://edujunction.vercel.app/",
+  },
+  {
+    id: 1,
+    title: "BookRack",
     img: "1.jpg",
     desc: "Explore a vast digital collection at our E-library website, offering a comprehensive range of e-books all accessible at your fingertips.",
     link: "https://amankhansili.github.io/BookRack/Home.html",
   },
   {
     id: 2,
-    title: "Travelling",
+    title: "TravelX",
     img: "2.jpg",
     link: "https://amankhansili.github.io/Web_Sites/",
     desc: "Discover your next adventure with our intuitive travel website.",
