@@ -56,7 +56,9 @@ const Hero = () => {
               <a href="#Portfolio">See the Latest Works</a>
             </motion.button>
             <motion.button variants={textVariants}>
-              <a href="#Contact" type="button">Contact Me</a>
+              <a href="#Contact" type="button">
+                Contact Me
+              </a>
             </motion.button>
           </motion.div>
           <motion.img
@@ -76,7 +78,7 @@ const Hero = () => {
         Writer Content Creator Influencer
       </motion.div>
       <div className="imageContainer">
-        <img src="/2.png" alt="" />
+        <img src=".\1.png" alt="" />
       </div>
     </div>
   );
