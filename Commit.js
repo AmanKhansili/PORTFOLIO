@@ -4,38 +4,47 @@ import simpleGit from "simple-git";
 
 const path = "./data.json"; // Path to your JSON file
 
-const makeCommits = (startDate, endDate) => {
-    let currentDate = moment(startDate); // Start date
-    const end = moment(endDate); // End date
+const makeRandomCommits = (startDate, endDate, numberOfCommits) => {
+  // Generate a list of all possible dates within the range
+  let currentDate = moment(startDate);
+  const end = moment(endDate);
+  const dates = [];
 
-    const commitNextDate = () => {
-        // If current date is past the end date, stop
-        if (currentDate.isAfter(end)) {
-            return simpleGit().push(); // Push all commits to the remote repository
-        }
+  while (currentDate.isSameOrBefore(end)) {
+    dates.push(currentDate.format("YYYY-MM-DD"));
+    currentDate.add(1, "days");
+  }
 
-        const date = currentDate.format(); // Format the date for commit
-        const data = { date };
+  // Shuffle the dates array to pick random starting dates
+  const randomStartIndex = Math.floor(Math.random() * (dates.length - numberOfCommits + 1));
+  const selectedDates = dates.slice(randomStartIndex, randomStartIndex + numberOfCommits);
 
-        console.log(`Committing on: ${date}`); // Log the date for debugging
+  const commitNextDate = (index) => {
+    // If we have processed all selected dates, stop
+    if (index >= selectedDates.length) {
+      return simpleGit().push(); // Push all commits to the remote repository
+    }
 
-        // Write the data to the JSON file and make the commit
-        jsonfile.writeFile(path, data, (err) => {
-            if (err) {
-                console.error(`Error writing file: ${err}`);
-                return;
-            }
-            // Add and commit with the specified date
-            simpleGit()
-                .add([path])
-                .commit(date, { "--date": date }, commitNextDate); // Recursively commit next date
-        });
+    const date = selectedDates[index];
+    const data = { date };
 
-        currentDate.add(1, 'days'); // Move to the next day
-    };
+    console.log(`Committing on: ${date}`); // Log the date for debugging
 
-    commitNextDate(); // Start the commit process
+    // Write the data to the JSON file and make the commit
+    jsonfile.writeFile(path, data, (err) => {
+      if (err) {
+        console.error(`Error writing file: ${err}`);
+        return;
+      }
+      // Add and commit with the specified date
+      simpleGit()
+        .add([path])
+        .commit(date, { "--date": date }, () => commitNextDate(index + 1)); // Recursively commit next date
+    });
+  };
+
+  commitNextDate(0); // Start the commit process
 };
 
-// Call the function with the desired date range
-makeCommits("2024-02-12", "2024-03-02");
+// Call the function with the desired date range and number of commits
+makeRandomCommits("2024-02-04", "2024-03-01", 10); // Example: 10 consecutive commits between October 6 and October 24
